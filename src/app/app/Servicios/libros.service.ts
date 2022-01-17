@@ -16,7 +16,7 @@ export class LibrosService {
 
   public filtrar(termino: String){
     
-    return this.http.get(`${this.apiURL}/find/${termino}`)
+    return this.http.get(`${this.apiURL}/filtro/${termino}`)
     
   }
 
