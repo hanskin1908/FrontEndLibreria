@@ -1,0 +1,22 @@
+<h1>Buscando a : <small>{{termino}}</small></h1>
+<hr>
+
+<div class="row" *ngIf="libros.length==0">
+
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            no existen resultados con el termino {{termino}}
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="card-columns">
+  
+
+    <app-libro-tarjeta [libro]="libro" [index]="libro.idx" *ngFor="let libro of  libros;let i = index"></app-libro-tarjeta>
+
+
+</div>
